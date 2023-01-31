@@ -28,7 +28,7 @@ else
 32679 -> 6
 */
 
-System.Console.WriteLine("____Tusk 10____");
+System.Console.WriteLine("____Tusk 13____");
 
 System.Console.Write("Enter number 100 - 999: " );
 
