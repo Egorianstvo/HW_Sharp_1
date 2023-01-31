@@ -28,43 +28,28 @@ else
 32679 -> 6
 */
 
-System.Console.WriteLine("____Tusk 13____");             //Вы сказали не использовать длину строки.
+System.Console.WriteLine("____Tusk 10____");
 
-System.Console.Write("Enter number > 100: " );
+System.Console.Write("Enter number 100 - 999: " );
 
 int Number1 = Convert.ToInt32(Console.ReadLine());
 
-if (Number1 >= 100 &&  Number1 <= 999)
-{              
-    System.Console.WriteLine(Number1 % 10);
-}
-else if (Number1 >= 1000 &&  Number1 <= 9999)
+int i=1000;
+
+while (i <= Number1)
 {
-    System.Console.WriteLine((Number1 % 100) / 10);
+    i*=10;
 }
-else if  (Number1 >= 10000 &&  Number1 <= 99999)
+
+if (Number1 < 100)
 {
-    System.Console.WriteLine((Number1 % 1000) / 100);
-}
-else if  (Number1 >= 100000 &&  Number1 <= 999999)
-{
-    System.Console.WriteLine((Number1 % 10000) / 1000);
-}
-else if  (Number1 >= 1000000 &&  Number1 <= 9999999)
-{
-    System.Console.WriteLine((Number1 % 100000) /  10000);
-}
-else if  (Number1 >= 10000000 &&  Number1 <= 99999999)
-{
-    System.Console.WriteLine((Number1 % 1000000) / 100000);
+     System.Console.WriteLine("Erro, enter number > 100");
 }
 else
-
 {
-    System.Console.WriteLine("Error, number < 100");
+     System.Console.WriteLine((Number1 % (i / 100)) / (i / 1000));
 }
-
-
+    
 
 
 
